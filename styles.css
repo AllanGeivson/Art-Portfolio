@@ -1,0 +1,1135 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    background-color: #c2ccd5a2 ;
+    overflow-x: hidden;
+    flex: 1;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#73cdff, rgb(0 0 0 / 0%)), url('https://c4.wallpaperflare.com/wallpaper/295/924/838/foliage-in-vermont-wallpaper-preview.jpg');
+}
+
+/* Ensure no unwanted margins or padding */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent overflow from any element */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+form button:hover {
+    background-color: #45a049;
+}
+
+#form-message {
+    color: rgb(47, 255, 47);
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+h1, h2, p {
+    text-align: center;
+    color: #73cdff8a;
+}
+.header-image {
+    width: 100px; /* Control image size */
+    height: auto; /* Keeps aspect ratio */
+  }
+  .hidden{
+    color: green;
+  }
+/* Header Styling */
+header {
+    background:#ffffff; /* Solid color underneath (Instagram blue) */
+    color: #5e9296;
+    height: 17rem;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    flex-direction: column;
+    
+}
+/* Header Styling */
+.header2 {
+    background:#ffffff; /* Solid color underneath (Instagram blue) */
+    color: #5e9296;
+    height: 17rem;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    flex-direction: column;
+    
+}
+
+/* Center the logo */
+header .logo {
+    font-size: 24px; /* Reduce font size on mobile */
+    font-weight: bold;
+    color: #8984df;
+    position: relative; /* Ensure it's centrally aligned */
+    margin: 0;
+    max-width: 80%; /* Make sure it doesn't overflow */
+    white-space: nowrap; /* Prevent logo from breaking into multiple lines */
+    overflow: hidden; /* Prevent overflow of text */
+    text-overflow: ellipsis; /* Add ellipsis if it overflows */
+}
+
+/* Add the colored underline */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Place it at the bottom of the header */
+    left: 0;
+    width: 100%; /* Full width underline */
+    height: 5px; /* Height of the underline */
+    background-color: #73cdff8a; /* Your desired color */
+}
+.dark-mode nav.mobile-menu {
+    background-color: #000000;
+}
+/* Main navigation menu */
+header nav ul {
+    display: flex;
+    justify-content: space-evenly; /* Space the menu items evenly */
+    flex-wrap: wrap; /* Allow items to wrap in case they overflow */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure full width usage */
+    position: relative;
+    top: 50px; /* Adjust as needed */
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #73cdff8a;
+    font-size: 14px; /* Reduce font size for mobile */
+    padding: 5px 8px; /* Smaller padding for mobile */
+    transition: background 0.8s;
+    background-color: transparent;
+    border: solid 2px; /* Reduce border thickness */
+    border-radius: 10px;
+    border-color: rgb(157, 157, 157);
+    white-space: nowrap; /* Prevent the text from wrapping */
+    
+}
+
+header nav ul li a:hover {
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+}
+
+
+#home {
+    background: url('') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5em;
+}
+
+#gallery {
+    background-color: white;
+    width: 100%;
+    margin: -1px;
+    scroll-snap-align: start;
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin: 20px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
+/* Dark mode */
+.dark-mode {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+/* Header in dark mode */
+header.dark-mode {
+    background-color: #333;
+}
+
+/* Dark Mode Button Styles */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+        /* Ensure the button size stays constant */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Adjust to your liking */
+        height: 0px; /* Adjust to your liking */
+}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: black  !important; /* Set background to black */
+    color: white !important; /* Set text color to white */
+}
+.fa-sun:before::hover {
+    color: rgba(0, 0, 0, 0.281);
+}
+/* Dark mode styles for the gallery */
+body.dark-mode .gallery {
+    background-color: black !important; /* Black background for dark mode */
+}
+/* Dark mode styles for the gallery */
+body.dark-mode #gallery {
+    background-color: black !important; /* Black background for dark mode */
+}
+body.dark-mode .commission-button:hover {
+    background-color: #f7ec15;
+}
+body.dark-mode  {
+    background-image:linear-gradient(#f7ec15, rgb(0 0 0 / 36%)), url('https://c4.wallpaperflare.com/wallpaper/295/924/838/foliage-in-vermont-wallpaper-preview.jpg')
+}
+body.dark-mode .welcome-box p {
+    color: rgb(255 255 255 / 95%);
+}
+body.dark-mode p {
+    color: #f7ec15;
+}
+body.dark-mode .menu-icon .bar {
+    background-color: #f7ec15;
+}
+/* Dark mode styles for the gallery */
+body.dark-mode .instagram-icon i{
+    color: #f7ec15 !important; /* Black background for dark mode */
+}
+body.dark-mode .instagram-icon :hover{
+    color: #000000 !important; /* Black background for dark mode */
+}
+body.dark-mode header nav ul li a {
+    color: #f7ec15;
+}
+body.dark-mode .h1bx {
+    font-size: 30px;
+    font-family: "The Girl Next Door", system-ui;
+    text-shadow:#f7ec15 0px 0px;
+}
+body.dark-mode h2 {
+  color: #ffffff;
+}
+body.dark-mode .pp {
+    color: #ffffff;
+  }
+  body.dark-mode form {
+    color: #fff;
+  }
+body.dark-mode h1 {
+    color: #f7ec15;
+}
+body.dark-mode .welcome-box {
+    background-color: rgb(0, 0, 0);
+}
+body.dark-mode header::after {
+    background-color: #f7ec15;
+}
+body.dark-mode .p {
+    background-color: #f7ec15 !important; /* Change this to any specific element */
+}
+/* Icon handling */
+.dark-mode-toggle i.fa-moon {
+    display: none;
+}
+
+/* When dark mode is active, show the moon icon */
+.dark-mode .dark-mode-toggle i.fa-moon {
+    display: inline;
+}
+
+.dark-mode .dark-mode-toggle i.fa-sun {
+    display: none;
+}
+.fa-sun:before {
+    content: "\f186";
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    color: #73cdff8a;
+    margin: 0;
+    padding: 0;
+}
+.fa-moon:before {
+    content: "\f186";
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    color:#f7ec15;
+}
+/* Scroll hint message */
+.scroll-hint {
+    display: none; /* Initially hidden */
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: -20px;
+    opacity: 0; /* Start with invisible */
+    animation: fadeInOut 7s ease-in-out forwards;
+   
+}
+#darkModeToggle {
+    display: inline-block; /* Ensure the container is just as wide as the icon */
+    padding: 5px; /* Optional: Add small padding for clickability */
+}
+/* Show message only on mobile */
+@media only screen and (max-width: 600px) {
+    .scroll-hint {
+        display: block;
+    }
+}
+.dark-mode .scroll-hint {
+    color: rgb(255, 255, 255);
+}
+/* Keyframes for fading animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; }       /* Fully invisible */
+    10% { opacity: 1; }      /* Fade in */
+    90% { opacity: 1; }      /* Stay visible */
+    100% { opacity: 0; }     /* Fade out */
+}
+
+/* Simulated horizontal scroll animation (optional) */
+.scroll-hint::before {
+    content: '⬅️ Swipe ⬅️';
+    font-size: 20px;
+    display: block;
+    animation: scroll-indicator 0.4s infinite;
+    opacity: 0.7;
+    margin-top: -20px;
+}
+
+@keyframes scroll-indicator {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    font-size: 13px;
+    background: black;
+    cursor: pointer;
+}
+
+.gallery img {
+    
+    height: auto;
+    width: 150%;
+    border-radius: 24px;
+    transition: transform 0.3s;
+    object-fit: cover;
+    margin: 0;
+    max-width: 100%;
+  
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    .gallery {
+        flex-direction: row; /* Horizontal layout on mobile */
+        overflow-x: auto; /* Enable horizontal scrolling on mobile */
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        gap: 10px; /* Space between images */
+    }
+
+    .gallery img {
+        
+        width: auto; /* Make images wide enough for mobile */
+        max-width: 90vh; /* Limit the maximum width */
+        height: auto;
+        margin: 0 auto; /* Center images */
+    }
+
+    /* Hide scrollbar for a cleaner look (optional) */
+    .gallery::-webkit-scrollbar {
+        display: none;
+    }
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+img {
+    pointer-events: none;
+    user-select: none;
+
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    position: unset;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style for the file input */
+input[type="file"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #555;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #73cdff8a;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+form label {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+
+/* Style the label to look like a clickable button */
+.clip-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(14, 14, 14);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+.formu {
+    background-color: white;
+    padding: 30px;
+}
+.hidden {
+    display: none;
+}
+#formmessage p {
+    color: green;
+
+}
+/* Contact Section */
+#contact a {
+    color: #333;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+.fot1 {
+    position: unset;
+}
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    padding: 20px 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: unset;
+    bottom: 4px;
+    width: 100%;
+    }
+    .fot0 {
+        position: absolute;
+    }
+   
+}
+
+.footer1 {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+    /* Adjust header for mobile */
+    header {
+        padding: 30px 0;
+    }
+
+    header .logo {
+        font-size: 40px;
+    }
+
+    header nav ul {
+        top:3px; /* Ensure menu doesn't overlap */
+    }
+
+    header nav ul li a {
+        font-size: 12px; /* Smaller font size */
+        padding: 3px 6px;
+    }
+
+
+
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 10px;
+        padding-top: 20px;
+        margin: 0;
+        margin-top: 10px;
+        font-family: "The Girl Next Door", cursive;
+
+    }
+
+    .desktop-menu li {
+        margin: 0 20px;
+
+    }
+
+    .desktop-menu li a {
+        font-size: 20px;
+        font-family: "Rubik", sans-serif;
+    }
+.fot0 {
+
+    width: 105%;
+    margin-bottom: 0px;
+    
+}
+.footer5 {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -50px;
+}
+/* Welcome Box Styling */
+.welcome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.welcome-box p {
+    font-size: 1.2em;
+    color: rgb(110, 103, 103); /* Darker text for better readability */
+    line-height: 1.5;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+.h1bx {
+    font-size: 30px;
+    font-family: "The Girl Next Door", system-ui;
+    text-shadow: 0 0 rgba(241, 241, 241, 0.733);
+}
+/* Styling for the welcome image */
+.welcome-image {
+    display: block; /* Block element to allow centering */
+    margin: 0 auto 20px;
+    border-radius: 50px;
+    
+}
+
+.desktop-menu .dropdown {
+    position: relative;
+}
+
+.desktop-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 8px;
+    margin-top: -40px;
+    padding: 5PX 0;
+    left: -20PX;
+}
+
+.desktop-menu .dropdown-content li {
+    text-align: left;
+}
+
+.desktop-menu .dropdown-content li a {
+    color: #f7ec15;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.desktop-menu .dropdown-content li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Show dropdown on hover */
+.desktop-menu .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering over the dropdown parent */
+}
+
+/* Keep dropdown visible when hovering over it */
+.desktop-menu .dropdown-content:hover {
+    display: block; /* Keep it visible when hovering over the dropdown */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .desktop-menu .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+}       
+
+@media (max-width: 768px) {
+.welcome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    max-width:400px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+}
+
+@media (max-width: 768px){
+    .fa-moon {
+        position: relative ;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        bottom: 170px;
+    }
+}
+@media (max-width: 768px) {
+    .fa-sun {
+       position: relative ;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        bottom: 190px;
+        size: 20px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .header2 {
+        display: flex;
+        height: 25%;
+    }
+}
+/* Commission Button Styles */
+.commission-button {
+    display: inline-block;
+    background-color: rgb(2, 2, 2); /* Default button color */
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+.commission-button:hover {
+    background-color: #73cdff8a; /* Blue hover effect */
+    color: #fff;
+}
+/* Contact Section Styling */
+#contact {
+    background-color: rgb(0, 0, 0);
+    padding: 50px 20px;
+    text-align: center;
+    margin: 160px auto;
+    max-width: 360px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#contact a {
+    color: #73cdff8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dark-mode #contact a {
+    color: #f7ec15;
+}
+#contact a:hover {
+    color: #333;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #50c0e9;
+}
+
+
+@media (max-width: 700px) {
+    .nav-links {
+      position: fixed;
+      background: #710800;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px; /* Hidden off-screen */
+      text-align: left;
+      z-index: 2;
+      transition: right 0.3s ease; /* Smooth transition */
+    }
+    
+    .nav-links.open {
+      right: 0; /* Slides the menu into view */
+    }
+  }
+  .instagram-icon {
+   
+ position: absolute;
+ top: 10px;
+ left: 10px;
+}
+.instagram-icon :hover {
+    color: #000000;
+}
+
+.instagram-icon img {
+    width: 100px; /* Adjust size as needed */
+}
+
+.instagram-icon i {
+    color: #73cdff8a; /* Instagram blue color */
+    font-size: 40px;
+} 
+/* Hide the UL on mobile screens */
+@media only screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none; /* Hide the desktop menu on mobile only */
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 20px;
+    right: 10px; /* Position the icon to the right */
+    z-index: 1000;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #73cdff8a;
+}
+
+/* Hidden mobile menu */
+
+nav.mobile-menu {
+    background-color: rgb(16, 16, 17);
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden off the right side of the screen */
+    width: 170px;
+    height: 100%;
+    transition: right 0.3s ease; /* Smooth transition for sliding in */
+    z-index: 1000;
+    display: block;
+}
+
+nav.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Display the menu items in a vertical column */
+}
+@media only screen and (max-width: 768px) {
+nav.mobile-menu ul li {
+    padding: 35px;
+    text-align: center;
+}
+
+nav.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+} 
+
+nav.mobile-menu ul li:hover {
+    background-color: #575757;
+}
+
+/* Show the mobile menu when the 'visible' class is added */
+nav.mobile-menu.visible {
+    right: 0; /* Slide the mobile menu in from the right */
+} }
+@media (max-width: 768px) {
+    h1 {
+        border: none;
+        text-decoration: none;
+        margin: 0;
+        box-shadow: none;
+      
+    }
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        height: 25%;
+    }
+}
+
+/* Hide the menu and hamburger icon for larger screens */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+    nav.mobilemenu {
+        display: none;
+    }
+    
+}
+
+/* Close button (X) styling */
+.close-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1010;
+    display: none; /* Hidden until menu opens */
+}
+
+/* Display the close button when the menu is open */
+nav.mobile-menu.visible .close-btn {
+    display: block;
+}
+.about{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center items horizontally */
+    padding: 20px;
+}
+.content {
+    background-color: white; /* White background for the text */
+    padding: 20px;          /* Space inside the div */
+    border-radius: 8px;     /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    max-width: 600px;       /* Limit the max width */
+    text-align: center;     /* Center text */
+}
+.profile-image {
+    width: 100%;
+    size: 0px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-top: 50px;
+    display: block;
+}
+@media(max-width: 768px) {
+    .profile-image {
+        width: 100%;
+        size: 0px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-top: 50px;
+    }
+}
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-bottom: 60px;    /* Space between image and text */
+}
+
+/* admin stuff*/
+
+.container2 {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+
+}
+.container2 .content2 {
+    text-align: center;
+}
+.container2 .content2  h3{
+    font-size: 30px;
+    color: #333;
+}
+
+.container2 .content2  h3 span{
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+.container2 .content2  h1 span{
+   
+    color: crimson;
+}
+.container2 .content2 p{
+
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.container2 .content2 .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+.container2 .content2 .btn:hover {
+    background: crimson;
+}
+
+.form-container2 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #eee;
+}
+.form-container2 form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+.form-container2 form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+.form-container2 form input 
+.form-container2 form select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px;
+    color: #eee;
+    border-radius: 5px;
+}
+.form-container2 form select option {
+    background: #fff;
+
+}
+.form-container2 form .form-btn {
+    background: #fbd0d9;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-container2 form .form-btn:hover {
+    background: crimson;
+    color: #fff;
+}
+.form-container2 form p a{
+    color: crimson;
+
+}

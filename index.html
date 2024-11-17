@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="2">
+        <div class="logo"></div>
+        <h1><img src="https://i.ibb.co/LzbWXHP/download-2.jpg"  alt="Fleter Mause" width="300" height="160"></h1>
+        <div  id="menuToggle" class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+           <!-- Updated navigation menu -->
+           <nav>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://www.instagram.com/fletermaus/" target="_blank" class="instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+   <!-- Dark Mode Switch -->
+   <button id="darkModeToggle" class="dark-mode-toggle">
+ <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+</button>
+
+    </header>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+        <button class="close-btn" id="closeMenu">X</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="commissions.html">Commissions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <section class="welcome-box">
+        <h1 class="h1bx">Welcome to <strong>Fleter Mause's </strong>Art Portfolio</h1>
+        <br>
+        <p>Explore my latest creations and commissions below!</p>
+    
+        <!-- Commission Button -->
+        <a href="commissions.html" target="_blank" class="commission-button">Commission Me!</a>
+        <a href="#gallery" class="commission-button">Portfolio</a>
+    </section>
+    <div class="welcome-box">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUWFhYXFRUVGBUXFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAABAAIDBAUGB//EADwQAAEDAgMFBwMCBAYCAwAAAAEAAhEDIQQxQQUSUWFxEyKBkaGx8AYywULRI1Lh8RQzcoKSomLCBxVT/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACARAQEAAgICAwEBAAAAAAAAAAABAhEDIRIxBCJBURP/2gAMAwEAAhEDEQA/AMpJKEli2JFBFAJFBFAJFBJAFMpYsU61Nx+1ph3Q2PunErMxb5LhNrSPZPG6pXHcdni8AHutkfVVsTgCWkESMiq303tntGljo3mW6t0P4WsccZiLWv7rSZ2VlcJpy2DpOpnsiY3e9Tdy/lPT2WnQrb0jIzcHQ5W5Eqzj8HvQcr58LLGxjKjXWMEXDs5BtHst5ltjcNNAQZac8/DqrWFrH7XZj1WXSxBeASA1wF2z1FjwP5VulX3r5EZ/ullPLsY249VoPbJ+WVd7IPv+CpqFSevBOrs+fhEp5RWcOCgLYKttCirU06mGU+Cna8DdJs0ncceT+7PK+6f9qrtz6eilDA5rmk2Ig+Ovkl+K32uvpitRfTd9zQZPCDB/7D0XLYcSHU3ZtJtw/sVu7PxRa5ry0zA3/wDV9tX/ANXeKqfUGE7KsKg+19x04Hw9kX+lOrcWZVZLObY/afVc+aW5WEDMgjgJP4K6eo0Zt4dVj42jEH+Ug+BKyzmm3Hlt6Js7EQ0X0W1QxC4jAY2wutrD4zmuevWuO3TNxHNWsPiVzbMWrOGxV0k3j6dVSqWUk2Wdhqyt9op/0srly40VdedfW+zTvb7R1XoFWosnaOHFQEFaeflNLw4nh+MBDlLgKRcZOS2PqrZZpuMCywKeJIbCO9aRcdZNTF4uO4MuKwqj4JEqxigSyZWI7e1RJpNyegNrKVr5WeHKRtRVpC8lCrNqqVtVAPRQDk6EjBFKEkAgsvHAQTMZA2WmQqu0MHIPegZqM8tWNeKb2zKGJLKrXix3b8xrK6Pav1FSw1Fj43nPHdGp6jquGxOILBEzfPhnb3UGNxnainMzTBbHMm3v6LadxjlNVsP+vsQ8x2bY4Ex7KWn9bVP10WOECYJ1m0kfJXNYZ4DnB0CdY5xdR1mmSZkcM8vayrx16Rct+3Z0fqTDP3Za6kf+QzAJJGWSv06zT3mPDuhnP5HguBdhmhodvgl36QTvAcSC2PGUwVywAscRxIOZ52hPdibjK9SwWNk/+QzHLiFqtFpBngvOdgba7WG1Du1f0O0fGnXSF2ey9oT3SOo4RqOIV7Rr8Xnpj1M8flQm59uiuM6hqBPwxvxRqs8VG03TLY12Q6+venIREO/6lh6qx2Pa0Xs/Uy4nQC4tyKbWA3A6J3DvEcW2n0lDA1DSqgOuDbPMju26/lTOro8u5KwKFcCxBgZ6mHWM8gZ8lHjGXHAjzsVf2/huxrhzQd13eaeIKrVGyy2lwfLJTZuWNJdWZf1DgwQOlloUcUQodlt3iW6RI43Vytg4XlcnLcM7K+k+PjjyccyiWltDmr+Gx3Nc9VokIU6jgtMOWVWXFY9I2fipaFfbiFw2zNpQLrZbtK2ai5dsL8etqpWCgqVFkf46+akGJlbYn/lpHtnANrNIi68o2tgHUKpDhYleutqrE+qtkCtTJAutmPLwbm485YQAQclXfhwSnuY5hLHZgp4KnuOLTeNJMNNWYQhPbPStdOD1KWJppJ7LRCopW1VXLChKAvNqp4KoB6kbURoLoUmKph1MA55Aj8qmysrtIm8XkTPLiOCx5p024stV5ztppbUII+fhZrK8fPRdJ9V0nNcTvTOdh7xdcsRqD86Lbhu8Yy5p9l+pUAbMaAC/K49FWNbKOAnx0jxUBNk5oE3Hjw4H8rXbLR4daDpp4rS2LsmpiHhrRYiZ4eOmap4Wi57wGibxGZE2lejbE2YcPT70aFziIaTobjjkTr0TxmyyulSv9IU6dIOkOPUtyNoPUacFbxo/wu52lQb0ZOBkjL7v1ZZp20aQxHZEk3rNG80uYC2Jc/O8X8jzVXaOxnPa176jjElu8ZLWk2Di6ZtF1pr+Rlv+1p4HbjD3HGNBw6cwtMOGnvmvNsThjTgscbSQ2wF7+3utfYe2O7uPNwbcxwSx9nl6djvJjs+qo0MXN1cFS3h66rWRjas4Z4Mg5GZ16KlVfDSZg0zukmTG6YnrEKWm+CI+fLqOuzeJEmHCD1iRlrn5KMp20x9WLm029vQGpaN4Zam4MZQeMZlc7galiOGXrfw/C2dibRBJFpEg+BIIPgsza9A0a0xDXZGLGc4Pkpv9En4rYSq5jpbm0kxoRqPnFdZQqNqNDhr6HUHmuXos/iltu+0jxc2QrOzMcWPc11rjeHX7XjyIPSVxfI+P5zynt6fxPl/53xvqtyrgwVSrYBaTKyk3gV51wsexhzysIUS1B1ZwW0+iCqdfCJTKyunHPGs5uMIV7D49U6uEKh7MhdOPPCvHLXQ0sWrlOuCIK5RlYhXKGOW8zlVOGMz6q2UAS8Bcg6RmvScRVD2EG64zGbocRCuV5nzfj+P2jTSSSTeUMJQkigAQmFikSRsIHUkzdKtQgQnstK4cp8PXg/B6oGmmGmj2J0W3cEalIndtHH8rz6thoJ5Zgr0Hff8ApBI4CQue2zQv/l3i5jJRh9LpeX3m3NsYOnO0eqa/jFlbbhy47ozNh10HjkrGAwnEa34jS05ronbDLpo/TdAUyajgJDbeMe0q3gNsYh+IcRvGi9tRpDiS0ANcQBOjTaeJ5q0cL2VMAgd/PMGI59dFn4jGupUezAECQHQJLXGYLs+FuSreqj3F2hWqOfh2scP8wG/EtOfW6P8A8i16v8KjT+zK1t59gAfwOq5jA7Rcyo18/aQfIhXNqbbc42Ivfp0T8utJ8O9syjXIIBngQdE11cg7wNwZH7qJ9QkkkyTmdVGVMXXdbB2kKjJm+RC6HDVl5dsbHGjUB/STdek4F4eA5uRF+Vv6+q2wyY54NGpa41CDW3N+fWMsucIF3zmng+unH5CvKbRjdK1CmGVah1c6f+Qv7K9tOj2tK36ZNz5n8qB1IlwMacVOyqWwQbX3uJBMXHzNR+K/XO03Xa4Zgg+SZ9QVTRe3EMiAQHW3v4b8zB1BAPK60cdh91xcI3ZgXzyvBv8A3UNSkKtN7TlAHUGx9z5KZPcX+yreBxdgJmwIPEHJX6eKXJbAqOY11B572HcQDIgt09Pwt1ruC5s+OOrj5ctNlldSipKxW1Sp2Yhc+XDHbx/KsaZYCoamFBUTMQp2V1zZcNdvH8qKFbCKlUpELfJBUFWiCokyxdmHyJWK2qQsHamEcahIyK6urhFVdhytceaxefhyzVUkUEl2vlzkkEUAUU1FICkgigFCUJIpg6jTPGB1j3WbtjBPMw9pm8E8eYy8VsMYN3vOETkZnyF1j7RYwXBPI9Dl0UZbaYOdw9HedcRGo5i44Ef1WrQwRMMFxvXNreccPRQ4Nwc8kT5+Bk6j+i3X0gGS5oh19SAOMhduE+rh5L9mPtPEkEMsWgtaHy0i33GxN+9MpmOptc0xlkdRZVHuBqEAki82mL5kcVNUxEO3SIBGXITHM6qNL2wKlKJhVnuvdbOMpWPQRGXNZT2XSNG6IQbdKoYQaUwDm8bLrfpPacdxxsI8iVyReJ/KuYR5BBa4iPl0Frb1eJgg9NOfonE291i/T22WuAY51+cWPWVs4i2U5ze3yy6McplHNljcae2OF48PDmnsZLpzGRHDx4qHDv8A5tf6LQFIRIFuOtskWFtnYzDgyBFhwMnPL0WXRdEtiL35j5C6KrTMiBeL34xKyMazddI58eOUqbP1pjlvpzO2C7D4hlcCQf4btRa4ka2J8luYOtvA/M7qLaWFFRjmRmIB4OEFpnyWbsCuYLXZtJb46grO476azLXbflHeTEpWDfaUPUjayrylKRy2L7MSphXWVKcKhUXjlbY89jV7QJpAVBtdSiusMuF14fLZKSCK6XnCkgigCkgigCkgikBRlNRQElCnvGCYGpkCOd1X2waZs0OgCLwZ5mck9zlm7TrhozIPkjSoh2bQI1uTnxAtfyW9Ww3duSJjugiL5HOY5LnMA9zgSTYG568OfstepXcGgCCZAaImXOd3d45kDO665dRx3G3JZbsYBhcaQJv3jedSRwi/GYvGuRXoVGywsAqSTG6BIjOZk8hHsuqq/TlRuEdXqYhwdYhxDg0kkt3QG/aLaDVcvsraGI7RtB01A8yC8ElmsgtvFiLzmpyutReGO5bPxU2rhiGgmwjQawJHr7rmS2ZXdfVTA2mRNzcwd4GMj6nzXFYNgJ45Tx4DzUKV6mGnVRVKcWHtdauKoBvdGhN1Sw+CrVi4UadRwbmGMc8gcTAtknsaVOyJ0VqhQBGcHhBhWv8A6h7ajafat3nBpBa4OaC7Rx0jI8I1TXMcN5rxD2RIt4FGxpawdaDcwRzz9F22wdoCu3szG8M+J4A/Mlwe9LZjxGadQxbqdRr22I556QfRPG6qcsdx6ayjEDMG3K/ValBmggjrEQLTZZGyNoNr02uFyI3hrwnz9ltvG40PvzjXn5ey6N7m3LZq6plajFwJPDLSwJ8lkYuk7cLnFu9ckX8ABqukp4hoBk5xE9IlYW3QGtEm5Mi/Hgi+hje2SO80gaDhw/sqeFaA4yM8+a0KWHJBIJgTlnP5WfUEOKxyt6rpkmrFgYlpsPBSLPp0u+Iyku+ei0Fnye18fokkklm0JJJJAJFBJAVUUEUjJFBJICigkgCkkkgCkgiEAisfbIsden7rYWNtxxiLCbc/VVBsdj0REmI0EkXgz8KdiqrplgN3tgjM2LW5ddFHgQA0XdHqSOMey0WvA3XS65EautrPEdZsujKbmnPjdXaDae1qmIYxjqrtymLM3obMkmQPuufkKv8AT7z2z6o+2lTdJ0Jduw0cSYMjgltXD0qpLg59FxzDQHMJ1Lby3pdUMbjGtZ2FAHd/UZkuIzc45T7AeJx8bL3W9zlx1JpYx+N7Zgg8hJGdjYdbLJ2bTi+7nbobQSNM5nkU3fhtrz3Y6k5eqlpVybbxMERxO6Db/TLrcFpGNTPDdYmJ8xbx1V3ZH1FiKNB+Fp1OzBqOc4t7rnAsDQN8XiB7rNrvYHhx+0tn0sD6eaqYh7XQWmHARPEc/NJc0kcwtfvF2WXJDHYnfqOcP/zaCSTnx9fRVHioc3BPqubZoHUznzSk0eVlPo1LEaHT9ki5Qs/dTbkhOIq59P7Zdh6rhMseIP8A4nQr0zCbc7fDyGQQ25kQST/ZeM13XPstChtGo1gaHmLWm1uScysTlhL29BZ9RE7xfR3WxAMyORXLbVx/aOcWEhs2DruAGRlS7P2qDScH3MHPSAIMxZY9XEZgNHXXw4I2Jjpp1dvvYwU2yCBBMxqotmbWeXbru8D5rIdLjLj4lTYOoGuB4I2epHc4YWniplXwM9m2bGNVYlZX20x9CkgkkoUkEkAUkkkBVSQRUmKSCKASKCKDJFBJBCigkgFKytpgHQHxgrUKz8bS3ss+cR4zZViVUME4gwRbSbjoSLjXon4gwLO4DXMnIzeBOqoV2saf8wbwzgEgC8iePgpXVy5sk6d20W4zZb73GNmqnxAMAbwFszPe5wBbz1VN9EhzX2IECBYch4wfVPZXkHU2ub2HKczKbvtIaDk24be7jAE+PkEgpYkAAiOZHG9o/wBp90NnucTvCSTYZTMk+UAW5KfHM3Sb3aYP+wkAeQ9FNgnBo4HdBy0yaPcoFVa9MloPFoy48PT0WfiXzxtr80V6riB0ImG8yD7bx8vBUsQ6HHxB4EOFvx6ICAF2sosPz94QsJBCa15GUgG39OaDWG28fGPFWDUt0GYsqTXxEW55FMfVmyABuVMTux1uomNCjrlI/wAX6eIDbtM9fyFGXH+qosEq1hz3bp6Ttr4DY5qGDUiwOU2XS4LZVKnENkjV1zPFY+Cq7j6Z0IAXTBRkvE8FOBUYTgoUfKKZKdKDFJBJAFJBJAVkUElKhRQRQCSSSQCRSSQCRCClw9PecBxPpr6Jyb6K3UR4gbrN88oXIbSx9R5IJhsmw9p6Lsfqd8CBYwfSFxVRhn5mtc549RnxXy+1QtbHDpyUgqbvUgmLQOcdIt1VihhyYt8/bkrFbAta0mLxnw46qMcmueMs6U6NQFrQCMyeFzlLjpyQc9o3epm0EePRU8dR3DvAyYBIGk5fOiq0q8E87fPNaufS9iMTvOLrHvPIPqPC6idioOfBp5gZR0AjxVZ5yy8Oii3jPzggLdWtIix5iePoqtVw0+DgU1zv6+CbKAcSdeSbvWQhFlOUGBedUAJQdKc1qRyJaIOUpldquYanviIuB5qrXYctQiCxWYYKu06dpVNrZPNavYw1NLSY+Q3/AEiPBdRham8wHiFyWHEtaeoXR7Ff3S3h7KMl4tBEIQioUKMpqKAckgigxQSSQFZFBFSoUkEUAUkkkAkUkkAlo7Epb1SdACfws5db9LYH+C6oR9zo8Bb3la8M3nGPPlrCue+o8C512ifKeea5Q4N83aZyveOp8B5r0TbW0aFOxO87RolxseAXMYrE1ahO6G028SN53pYea35ZhvdrDiy5NakZXZCmN5xDRxI5ZAa8ExlB9YgiWUwSQ4jvP8OHWy0KezmA7zpe7i+/kMlcXPc5+OmY39rMr7HpujS0f343UNP6dozJbPJbKSjyqtRlO+nqH8seJ4oD6cofynzK1kUbp6jnq/0rTP2uLfUKvW+k/wCV/HMeS6lJPypeMcHX2FWZJiQCMlXqbOe3MGPmfp8K9DIUX+FpmQ4WOZAuOacyK46edvpyi2gfmS1trbLdSeQRY3BFwQdQo8Ozki7Vjo7Z2GMjwUu2tnyZb90AxxWtgaIsmbX0jzVY+kZ+3MYHAy7eNgBKkruAOafiq773VAFUhq4ON03vmFr7KxMOHOywsC+xC0MGYKLA6xJRYWpvNUqyvTSdkigigyRQSQBSQSQECSSSlQopJIIkUkkjJFJJAJWTtCt2YpB+6wTYC9zOfjwSSVS2eisl9qrKYGQzzOp6nVOSSSMkUEkAUkkkAkkkkEKCSSASKSSAjr0WvbuuEj1HRZNXZoYbGRb+xGhQSWmP26qMvr3FimzdUjsP2jHDWbeARSTs8fRTLy9uWxlAgwc1nVqUFJJUk6iYIVunXMkC97QgkgOr2LSeGEvESbDgFopJLK3dayaBJJJIEkkkmCSSSQH/2Q==" alt="Welcome Image" class="welcome-image">
+        <p>
+            Hey, welcome to my portfolio page. These are my favorite personal illustrations, inspired by nature and fantastic stories. Click on the pictures to read more about them in one of my blog entries.
+        </p>
+    </div>
+    
+    <!-- Gallery Section (with images directly under the header) -->
+    <section id="gallery">
+        <div>
+
+        <h1> <br> gallery</h1>
+        
+        </div>
+        
+        <div class="gallery"> 
+            
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 1">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 2">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 3">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 4">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 5">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 6">
+            <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 7">
+           
+        </div>
+        <div class="scroll-hint">Scroll horizontally to see more</div>
+    </section>
+  
+
+<section id="gallery">
+<h1>traditional</h1>
+<div class="gallery">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 1">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 2">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 3">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 4">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 5">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 6">
+<img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 7">
+</div>
+</section>
+
+<section id="gallery">
+    <h1>Misc</h1>
+    <div class="gallery">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 1">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 2">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 3">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 4">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 5">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 6">
+    <img src="https://i.ibb.co/5YT79Ph/download.jpg" alt="Art Piece 7">
+    </div>
+    </section>
+ 
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1></h1>
+            <p></p>
+        </div>
+
+     
+    </section>
+
+   
+      
+    <!-- Footer -->
+    <footer class="fot1">
+        <p>&copy; 2024 Ruby Gallon. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html> 
